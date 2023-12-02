@@ -1,0 +1,182 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "imagePath": "https://api.dicebear.com/7.x/pixel-art/svg?seed=John",
+      "email": "jhon@gmail.com",
+      "phone": "06306354914",
+      "bankAccount": "1234-1234-1234-1234",
+      "salary": 1000
+    },
+    {
+      "id": 2,
+      "name": "Bill Gates",
+      "imagePath": "https://api.dicebear.com/7.x/pixel-art/svg?seed=Bill",
+      "email": "bill@gmail.com",
+      "phone": "06305431734",
+      "bankAccount": "1234-1234-1234-1234",
+      "salary": 5000
+    },
+    {
+      "id": 3,
+      "name": "Elon Musk",
+      "imagePath": "https://api.dicebear.com/7.x/pixel-art/svg?seed=ElonMusk",
+      "email": "elon@gmail.com",
+      "phone": "0630635434",
+      "bankAccount": "1234-1234-1234-1234",
+      "salary": 6000
+    },
+    {
+      "id": 4,
+      "name": "Mark Zuckerberg",
+      "imagePath": "https://api.dicebear.com/7.x/pixel-art/svg?seed=MarkZuckerberg",
+      "email": "mark@gmail.com",
+      "phone": "06306354123",
+      "bankAccount": "1234-1234-1234-1234",
+      "salary": 221000
+    },
+    {
+      "id": 5,
+      "name": "Steve Jobs",
+      "imagePath": "https://api.dicebear.com/7.x/pixel-art/svg?seed=SteveJobs",
+      "email": "steve@gmail.com",
+      "phone": "06306354123",
+      "bankAccount": "1234-1234-1234-1234",
+      "salary": 100000
+    },
+    {
+      "id": 6,
+      "name": "Jeff Bezos",
+      "imagePath": "https://api.dicebear.com/7.x/pixel-art/svg?seed=JeffBezos",
+      "email": "jeff@gmail.com",
+      "phone": "06306354123",
+      "bankAccount": "1234-1234-1234-1234",
+      "salary": 1000000
+    },
+    {
+      "id": 7,
+      "name": "Larry Page",
+      "imagePath": "https://api.dicebear.com/7.x/pixel-art/svg?seed=LarryPage",
+      "email": "larry@gmail.com",
+      "phone": "06306354123",
+      "bankAccount": "1234-1234-1234-1234",
+      "salary": 1400000
+    },
+    {
+      "id": 8,
+      "name": "Steve Wozniak",
+      "imagePath": "https://api.dicebear.com/7.x/pixel-art/svg?seed=steve",
+      "email": "seteve@gmail.com",
+      "phone": "06306354123",
+      "bankAccount": "1234-1234-1234-1234",
+      "salary": 1400000
+    },
+    {
+      "id": 9,
+      "name": "Jack Dorsey",
+      "imagePath": "https://api.dicebear.com/7.x/pixel-art/svg?seed=jackd",
+      "email": "jack@gmail.com",
+      "phone": "06306354123",
+      "bankAccount": "1234-1234-1234-1234",
+      "salary": 9400000
+    },
+    {
+      "id": 10,
+      "name": "Sergey Brin",
+      "imagePath": "https://api.dicebear.com/7.x/pixel-art/svg?seed=sergey",
+      "email": "sergey@gmail.com",
+      "phone": "06306354123",
+      "bankAccount": "1234-1234-1234-1234",
+      "salary": 194000
+    }
+  ],
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Room 1",
+      "availableSeats": 10
+    },
+    {
+      "id": 2,
+      "name": "Room 2",
+      "availableSeats": 9
+    },
+    {
+      "id": 3,
+      "name": "Room 3",
+      "availableSeats": 5
+    },
+    {
+      "id": 4,
+      "name": "Room 4",
+      "availableSeats": 5
+    },
+    {
+      "id": 5,
+      "name": "Room 5",
+      "availableSeats": 0
+    },
+    {
+      "id": 6,
+      "name": "Room 6",
+      "availableSeats": 1
+    },
+    {
+      "id": 7,
+      "name": "Room 7",
+      "availableSeats": 6
+    }
+  ],
+  "posts": [
+    {
+      "userId": 5,
+      "id": 1,
+      "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+      "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto",
+      "postDate": "2021-05-05T00:00:00.000Z"
+    },
+    {
+      "userId": 6,
+      "id": 2,
+      "title": "qui est esse",
+      "body": "est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla",
+      "postDate": "2020-05-05T00:00:00.000Z"
+    },
+    {
+      "userId": 5,
+      "id": 8,
+      "title": "dolorem dolore est ipsam",
+      "body": "dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae",
+      "postDate": "2020-05-06T00:00:00.000Z"
+    },
+    {
+      "userId": 6,
+      "id": 9,
+      "title": "nesciunt iure omnis dolorem tempora et accusantium",
+      "body": "consectetur animi nesciunt iure dolore\nenim quia ad\nveniam autem ut quam aut nobis\net est aut quod aut provident voluptas autem voluptas",
+      "postDate": "2020-05-07T00:00:00.000Z"
+    },
+    {
+      "userId": 8,
+      "id": 10,
+      "title": "optio molestias id quia eum",
+      "body": "quo et expedita modi cum officia vel magni\ndoloribus qui repudiandae\nvero nisi sit\nquos veniam quod sed accusamus veritatis error",
+      "postDate": "2020-05-08T00:00:00.000Z"
+    },
+    {
+      "userId": 9,
+      "id": 11,
+      "title": "et ea vero quia laudantium autem",
+      "body": "delectus reiciendis molestiae occaecati non minima eveniet qui voluptatibus\naccusamus in eum beatae sit\nvel qui neque voluptates ut commodi qui incidunt\nut animi commodi",
+      "postDate": "2020-05-09T00:00:00.000Z"
+    },
+    {
+      "userId": 10,
+      "id": 12,
+      "title": "in quibusdam tempore odit est dolorem",
+      "body": "itaque id aut magnam\npraesentium quia et ea odit et ea voluptas et\nsapiente quia nihil amet occaecati quia id voluptatem\nincidunt ea est distinctio odio",
+      "postDate": "2020-05-10T00:00:00.000Z"
+    }
+  ]
+}

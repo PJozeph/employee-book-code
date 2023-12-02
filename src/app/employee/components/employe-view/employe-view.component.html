@@ -1,0 +1,70 @@
+<ion-header>
+    <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-button (click)="backClick()">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+</ion-header>
+<ion-content *ngIf="employee$ | async as employee">
+    <ion-grid>
+        <ion-row>
+            <ion-col
+                size-md="6"
+                offset-md="3">
+                <ion-item>
+                    <ion-thumbnail slot="start">
+                        <img
+                            alt="Silhouette of mountains"
+                            src="{{ employee.imagePath }}" />
+                    </ion-thumbnail>
+                    <ion-label>{{ employee.name }}</ion-label>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col
+                size-md="5"
+                offsetMd="1">
+                <ion-item>
+                    <ion-label slot="start" color="primary">Email</ion-label>
+                    <ion-label slot="end">{{ employee.email }} </ion-label>
+                </ion-item>
+            </ion-col>
+            <ion-col size-md="5">
+                <ion-item>
+                    <ion-label slot="start" color="primary">Phone: </ion-label>
+                    <ion-label slot="end">{{ employee.phone }} </ion-label>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col
+                size-md="5"
+                offset-md="1">
+                <ion-item>
+                    <ion-label slot="start" color="primary">Bank Account </ion-label>
+                    <ion-label slot="end">{{ employee.bankAccount }} </ion-label>
+                </ion-item>
+            </ion-col>
+            <ion-col size-md="5">
+                <ion-item>
+                    <ion-label slot="start" color="primary">Salary: </ion-label>
+                    <ion-label slot="end">{{ employee.salary }} </ion-label>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col
+                size-md="10"
+                offset-md="1">
+                <ion-item>
+                    <ion-button (click)="onEditClick(employee)">Edit</ion-button>
+                </ion-item>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

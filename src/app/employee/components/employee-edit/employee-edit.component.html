@@ -1,0 +1,108 @@
+<ion-header *ngIf="employee$ | async as employee">
+    <ion-header>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-button (click)="back(employee)">
+                    <ion-icon name="arrow-back-outline"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+        </ion-toolbar>
+    </ion-header>
+</ion-header>
+<ion-content *ngIf="employee$ | async as employee">
+    <form
+        [formGroup]="employeeForm"
+        (ngSubmit)="onSubmit()">
+        <ion-grid>
+            <ion-row>
+                <ion-col
+                    size-md="6"
+                    offset-md="3">
+                    <ion-item>
+                        <ion-thumbnail slot="start">
+                            <img
+                                alt="Silhouette of mountains"
+                                src="{{ employee.imagePath }}" />
+                        </ion-thumbnail>
+                        <ion-input
+                            label="Name"
+                            formControlName="name"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col
+                    size-md="5"
+                    offset-md="1"
+                    size-xs="12">
+                    <ion-item>
+                        <ion-input
+                            label="Email"
+                            formControlName="email"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col
+                    size-md="5"
+                    size-xs="12">
+                    <ion-item>
+                        <ion-input
+                            label="Phone"
+                            formControlName="phone"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col
+                    size-md="5"
+                    offset-md="1"
+                    size-xs="12">
+                    <ion-item>
+                        <ion-input
+                            label="Bank Account"
+                            formControlName="bankAccount"></ion-input>
+                    </ion-item>
+                </ion-col>
+                <ion-col
+                    size-md="5"
+                    size-xs="12">
+                    <ion-item>
+                        <ion-input
+                            label="Salary"
+                            formControlName="salary"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col
+                    size-md="10"
+                    offset-md="1">
+                    <ion-item>
+                        <ion-input
+                            label="Image"
+                            formControlName="imagePath"></ion-input>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col
+                    size-md="10"
+                    offset-md="1"
+                    size-sm="5"
+                    offset-sm="1">
+                    <ion-item>
+                        <ion-button
+                            color="success"
+                            type="submit"
+                            >Save</ion-button
+                        >
+                        <ion-button
+                            color="danger"
+                            (click)="onDeleteClick(employee.id)"
+                            >Delete</ion-button
+                        >
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </form>
+</ion-content>

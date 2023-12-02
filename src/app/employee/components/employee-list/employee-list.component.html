@@ -1,0 +1,29 @@
+<ion-content *ngIf="employeeList$ | async as employeeList">
+  <ion-grid>
+    <ion-row>
+      <ion-col size-xl="8" offset-xl="2">
+        <ion-searchbar (ionInput)="handleSearchEvent($event)"></ion-searchbar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-row>
+    <ion-col size-xl="8" offset-xl="2">
+      <ion-list>
+        <ion-item *ngFor="let employee of employeeList">
+          <ion-item-sliding>
+            <ion-item>
+              <ion-thumbnail>
+                <img alt="No data" [src]="employee.imagePath" />
+              </ion-thumbnail>
+              {{ employee.name }}
+            </ion-item>
+            <ion-item-options>
+              <ion-item-option (click)="onViewclick(employee)">Details</ion-item-option>
+              <ion-item-option color="danger" (click)="onDeleteAction(employee)">Delete</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+</ion-content>
